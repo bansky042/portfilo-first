@@ -2,6 +2,9 @@ import React, { useState, useEffect } from "react";
 import '../component_css/section4.css';
 import AOS from 'aos';
 import 'aos/dist/aos.css';
+import Image1 from '../component_css/images/investment.png';
+import Image2 from '../component_css/images/BLOG.png';
+import Image3 from '../component_css/images/shopping.png';
 
 function Section4() {
   const [hoveredProject, setHoveredProject] = useState(null);
@@ -16,7 +19,7 @@ function Section4() {
       title: "Ban-Invest",
       name: "Investment Platform",
       description: "An investment platform with deposits, withdrawals, and referrals.",
-      homepageImage: "/src/component_css/images/investment.png", // Replace with your image path
+      homepageImage: Image1, // Replace with your image path
       link: "https://investment-website-qohq.onrender.com/",
     },
     {
@@ -24,7 +27,7 @@ function Section4() {
       title: "BanBlog",
       name: "Advanced Blog",
       description: "A modern blog platform with EJS and Node.js backend.",
-      homepageImage: "/src/component_css/images/BLOG.png", // Replace with your image path
+      homepageImage: Image2, // Replace with your image path
       link: "https://blog-website-1-mzt1.onrender.com/",
     },
     {
@@ -32,7 +35,7 @@ function Section4() {
       title: "BanMarket",
       name: "Ban Market",
       description: "A sleek and responsive eCommerce platform built with Node.js and EJS, offering a seamless shopping experience",
-      homepageImage: "/src/component_css/images/shopping.png", // Replace with your image path
+      homepageImage: Image3, // Replace with your image path
       link: "https://e-commerce-website-s6f7.onrender.com/",
     },
   ];
