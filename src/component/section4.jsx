@@ -5,6 +5,7 @@ import 'aos/dist/aos.css';
 import Image1 from '../component_css/images/investment.png';
 import Image2 from '../component_css/images/BLOG.png';
 import Image3 from '../component_css/images/shopping.png';
+import Image4 from '../component_css/images/portfoilo.png';
 
 function Section4() {
   const [hoveredProject, setHoveredProject] = useState(null);
@@ -37,6 +38,14 @@ function Section4() {
       description: "A sleek and responsive eCommerce platform built with Node.js and EJS, offering a seamless shopping experience",
       homepageImage: Image3, // Replace with your image path
       link: "https://e-commerce-website-s6f7.onrender.com/",
+    },
+    {
+      id: 3,
+      title: "Portfolio",
+      name: "Ban Portfolio",
+      description: "A sleek portfolio showcasing my full-stack web projects.",
+      homepageImage: Image4, // Replace with your image path
+      link: "https://portfilo-first.vercel.app/",
     },
   ];
 
