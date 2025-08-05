@@ -1,52 +1,46 @@
 /* Main container */
 .section1 {
   display: flex;
-  justify-content: space-between;
+  flex-direction: column-reverse; /* stack on mobile */
+  justify-content: center;
   align-items: center;
-  padding: 3rem;
-  background-color: #fff; /* ✅ white background for contrast */
-   background-image: linear-gradient(to right, #ffffff, #e4cfbb); /* ✅ gradient from desert sand to dark orange */
-
+  padding: 2rem;
+  background: linear-gradient(to right, #ffffff, #e4cfbb);
   color: #111;
- 
-
 }
 
-/* Left side with text */
+/* Left section */
 .section1-left {
-
-  background-color: transparent; /* ✅ transparent to blend with page background */
   padding: 1rem;
+  text-align: center;
 }
 
-/* Headings in desert sand */
 .section1-left h1,
 .section1-left h2,
 .section1-left h3 {
-  color:  #f87060; /* ✅ desert sand */
+  color: #f87060;
   margin-bottom: 0.5rem;
-  font-size: 4rem;
+  font-size: 2.5rem;
   font-weight: bold;
 }
 
-/* Paragraph in white */
 .section1-left p {
   color: #111;
-  font-size: 1.2rem;
+  font-size: 1rem;
   line-height: 1.6;
   margin-bottom: 1.5rem;
+  padding: 0 1rem;
 }
 
-/* Button styling */
 .btn {
-  background-color:  #f87060;
+  background-color: #f87060;
   color: white;
   padding: 0.75rem 1.5rem;
   border: none;
   font-weight: 600;
   border-radius: 8px;
   cursor: pointer;
-  transition: 0.8s ease-in-out;
+  transition: 0.4s ease-in-out;
 }
 
 .btn:hover {
@@ -54,17 +48,53 @@
   transform: scale(1.05);
 }
 
-/* Right side with image */
+/* Right section */
 .section1-right {
- 
   display: flex;
   justify-content: center;
-  padding: 1rem;
+  margin-bottom: 2rem;
 }
 
 .section1-right img {
-  width: 100%;
-  max-width: 300px;
+  width: 90%;
+  max-width: 280px;
   border-radius: 1rem;
   object-fit: cover;
+}
+
+/* Desktop layout */
+@media (min-width: 768px) {
+  .section1 {
+    flex-direction: row;
+    padding: 4rem 6rem;
+  }
+
+  .section1-left {
+    flex: 1;
+    text-align: left;
+    padding-right: 2rem;
+  }
+
+  .section1-left h1,
+  .section1-left h2 {
+    font-size: 3.5rem;
+  }
+
+  .section1-left h3 {
+    font-size: 2rem;
+  }
+
+  .section1-left p {
+    font-size: 1.2rem;
+    padding: 0;
+  }
+
+  .section1-right {
+    flex: 1;
+    margin-bottom: 0;
+  }
+
+  .section1-right img {
+    max-width: 100%;
+  }
 }

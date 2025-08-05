@@ -59,3 +59,15 @@
     
     
   }
+
+  @media (min-width: 768px) {
+.section2 {
+    flex-direction: row;
+    padding: 2rem;
+    }
+.section2-image-container {
+    width: 80%;
+    padding-right: 40px !important;
+}
+
+  }
